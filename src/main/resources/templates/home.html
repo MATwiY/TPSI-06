@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pierwszy projekt springowy</title>
+    <meta charset="UTF-8" />
+</head>
+<body>
+<h1>Przedstaw się ładnie: </h1>
+<form action="/hello" method="post">
+    Imię: <input type="text" name="imie" />
+    Wiek: <input type="number" name="wiek" />
+    <input type="submit" value="Wyślij" />
+</form>
+
+<br/>
+<p>Zadanie 1</p>
+<form action="/calc" method="post" >
+    <label>
+        x: <input type="number" name="x" />
+    </label>
+    <label>
+        y: <input type="number" name="y" />
+    </label>
+    <input type="submit" value="Dodaj" />
+</form>
+
+<br/>
+<p>Zadanie 2</p>
+<form action="/calc2" method="post" >
+    <label>
+        x: <input type="number" name="x" />
+    </label>
+    <label>
+        <select name="dzialanie">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+        </select>
+    </label>
+    <label>
+        y: <input type="number" name="y" />
+    </label>
+    <input type="submit" value="Oblicz" />
+</form>
+
+<br/>
+<p>Zadanie 3</p>
+<form action="/calc3" method="post" >
+    <label>
+        x: <input type="number" name="x" />
+    </label>
+    <label>
+        <select name="dzialanie">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+        </select>
+    </label>
+    <label>
+        y: <input type="number" name="y" />
+    </label>
+    <input type="submit" value="Oblicz" />
+</form>
+
+</body>
+</html>
